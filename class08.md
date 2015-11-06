@@ -12,3 +12,4 @@
  - sort
  - tac(display lines in reverse order, the last line first)
  - reverse(for each line, print the last character first)
+ - `ps -ax` is same as `ps ax`, which shows the processes running at the machine.
