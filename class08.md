@@ -1,2 +1,14 @@
 - ls [1-100]* :匹配首字符为1~1或者是0或者是0的文件
 - 0(stdin) 1(stdout) 2(stderr)
+- some interesting command
+ - grep
+ - sed
+ - awk
+ - fmt(insert line wraps)
+ - expand/unexpand(tabs=>spaces, spaces=>tabs)
+ - tr(translate, e.g. ls | tr a-f 1-6, use 1-6 to replace a-f)
+ - nl(add number lines)
+ - pr(format for printer)
+ - sort
+ - tac(display lines in reverse order, the last line first)
+ - reverse(for each line, print the last character first)
