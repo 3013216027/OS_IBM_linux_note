@@ -13,3 +13,10 @@
  - `tac`(display lines in reverse order, the last line first)
  - `reverse`(for each line, print the last character first)
  - `ps -ax` is same as `ps ax`, which shows the processes running at the machine.
+- global varibal
+ - `$`: PID of current shell
+ - `PATH`: Path that searched for executables
+ - `PS1`,`PS2`,`PS3`,`PS4`
+ - `PWD`: current working directory
+ - `HOME`: home directory of the current user
+ - `LANG`: language of user
