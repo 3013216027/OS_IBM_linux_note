@@ -41,7 +41,7 @@
  - kill信号
  
  | 信号 | 键盘 | 含义 | 默认动作 |
- |:----:|:----:|:--------:|:------------:|
+ |:----:|:----:|:-------:|:---------:|
  |01| |挂起,Hangup|终止进程,End process|
  |02|Ctrl-C|中断,Interrupt|终止进程,End process|
  |03|Ctrl-\\|退出,Quit|终止进程并转储,End process and core dump|
