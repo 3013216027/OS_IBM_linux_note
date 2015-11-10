@@ -48,6 +48,13 @@
 	 |09| |杀死,kill|终止进程(不可被重定义),End process(Cannot be redefined-handled by kernel)|
 	 |15| |终结,Terminate|终止进程,End process|
 	 - e.g. `kill -9 2333`x掉2333，没得商量= =
+- 进程优先级
+ - ... -> -60 -> +39 -> ...
+ - 越小优先级越高, [-20, 19]是为用户预留的可定义优先级
+ - 除`root`用户外，只能调大不能调小
+- daemons
+ - 永不终止
+ - 系统服务
 
 - 相关命令
  - `ps`, 显示当前进程，`ps aux`显示当前系统所有进程
@@ -55,4 +62,6 @@
 	 - `-x`: all other processes
 	 - `-u`: provides more columns
  - `pstree`, 显示进程树
-
+ - `kill`, `killall`
+ - `nohup`, 常驻后台运行，"别挂起俺"
+ - `nice`,自定义优先级, `renice`，重定义优先级
