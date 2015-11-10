@@ -1,3 +1,7 @@
+- wildcard expansion 通配符
+ - ? question mark 一个字符
+ - * 任意个字符
+
 - `ls [1-100]*` :匹配首字符为1~1或者是0或者是0的文件
 - 0(stdin) 1(stdout) 2(stderr)
 - some interesting command
