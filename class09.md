@@ -47,6 +47,7 @@
 	 |03|Ctrl-\\|退出,Quit|终止进程并转储,End process and core dump|
 	 |09| |杀死,kill|终止进程(不可被重定义),End process(Cannot be redefined-handled by kernel)|
 	 |15| |终结,Terminate|终止进程,End process|
+	 - e.g. `kill -9 2333`x掉2333，没得商量= =
 
 - 相关命令
  - `ps`, 显示当前进程，`ps aux`显示当前系统所有进程
