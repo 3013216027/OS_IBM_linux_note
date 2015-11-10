@@ -40,13 +40,13 @@
 	- 用进程ID(PID)，如`kill 2333`, 向进程2333发射一个终止信号(signal)，当然，其不一定会相应
  - kill信号
  
-  | 信号 | 键盘 | 含义 | 默认动作 |
-  |:----:|:------:|:-------:|:---------:|
-  |01| |挂起,Hangup|终止进程,End process|
-  |02|Ctrl-C|中断,Interrupt|终止进程,End process|
-  |03|Ctrl-\\|退出,Quit|终止进程并转储,End process and core dump|
-  |09| |杀死,kill|终止进程(不可被重定义),End process(Cannot be redefined-handled by kernel)|
-  |15| |终结,Terminate|终止进程,End process|
+	 | 信号 | 键盘 | 含义 | 默认动作 |
+	 |:----:|:------:|:-------:|:---------:|
+	 |01| |挂起,Hangup|终止进程,End process|
+	 |02|Ctrl-C|中断,Interrupt|终止进程,End process|
+	 |03|Ctrl-\\|退出,Quit|终止进程并转储,End process and core dump|
+	 |09| |杀死,kill|终止进程(不可被重定义),End process(Cannot be redefined-handled by kernel)|
+	 |15| |终结,Terminate|终止进程,End process|
 
 - 相关命令
  - `ps`, 显示当前进程，`ps aux`显示当前系统所有进程
