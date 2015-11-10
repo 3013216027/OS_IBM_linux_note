@@ -25,3 +25,11 @@
  - 父进程创造(fork)子进程，自己休眠(Sleep)
  - 子进程执行(exec)完后死亡(exit)，唤醒父进程
  - 父进程欲终止自己，需要先终止子进程，递归。或者将子进程交给init进程，此时子进程成为init的子进程
+
+ - 相关命令
+  - `ps`, 显示当前进程，`ps aux`显示当前系统所有进程
+   - `-a: all processes attached to a terminal
+   - `-x`: all other processes
+   - `-u`: provides more columns
+  - `pstree`, 显示进程树
+
