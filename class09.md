@@ -28,8 +28,8 @@
 
 - 相关命令
  - `ps`, 显示当前进程，`ps aux`显示当前系统所有进程
-  - `-a`: all processes attached to a terminal
-  - `-x`: all other processes
-  - `-u`: provides more columns
+ 	 - `-a`: all processes attached to a terminal
+	 - `-x`: all other processes
+	 - `-u`: provides more columns
  - `pstree`, 显示进程树
 
