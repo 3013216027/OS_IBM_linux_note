@@ -24,3 +24,6 @@
  - `PWD`: current working directory
  - `HOME`: home directory of the current user
  - `LANG`: language of user
+- 取消alias，执行原命令
+ - 使用完整路径， e.g. `/bin/ls`
+ - 命令前加反斜杠`\`, e.g. `\ls`
