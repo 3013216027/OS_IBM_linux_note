@@ -8,6 +8,7 @@
 |Data|Data|
 
  - 每个进程都有自己的环境(environment)
+
  | Process environment | 环境组分 |
  |:-------------------:|:--------:|
  |Program name|进程名|
