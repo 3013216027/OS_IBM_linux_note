@@ -1,6 +1,6 @@
 #Linux utilities
 
-- Include commands: find & locate, grep, cut, sort, head, tail, type, which, whereis, file, join, paste, etc.
+- Include commands: find & locate, grep, cut, sort, head, tail, type, which, whereis, file, join, paste, etc. 最重要的是`find`和`grep`
 
 ### find
 - `find where what how`, e.g. `find . -name orange`
@@ -34,4 +34,4 @@
  | -c | 只打印匹配次数(不打印具体匹配到的行内容) |
  | -n | 结果中显示行号 |
 
-
+ - 各种搞，此处不再赘述
