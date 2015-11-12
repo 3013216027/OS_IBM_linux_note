@@ -22,6 +22,7 @@
  | -newer | ref.file | 在最后一次修改ref.file后修改的文件 |
  | -o, -a | | 逻辑或/逻辑与 |
 - locate
+
 ### grep与正则表达式
 - `grep`常用选项
 
