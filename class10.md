@@ -1,8 +1,8 @@
 #Linux utilities
 
-#### Include commands: find & locate, grep, cut, sort, head, tail, type, which, whereis, file, join, paste, etc.
+- Include commands: find & locate, grep, cut, sort, head, tail, type, which, whereis, file, join, paste, etc.
 
-## find
+### find
  - `find where what how`, e.g. `find . -name orange`
  - `find`默认会递归地查找
  - `find . -name 's*' -exec ls -i {} \;`, `-exec`和`\`为固定组合，中间部分为命令，`{}`为占用符，表示将找到的结果填入该位置（而不是`-i`前或其他地方）.
