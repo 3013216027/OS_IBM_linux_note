@@ -46,7 +46,7 @@
 	 |02|Ctrl-C|中断,Interrupt|终止进程,End process|
 	 |03|Ctrl-\\|退出,Quit|终止进程并转储,End process and core dump|
 	 |09| |杀死,kill|终止进程(不可被重定义),End process(Cannot be redefined-handled by kernel)|
-	 |15| |终结,Terminate|终止进程,End process|
+	 |15| |终结,Terminate|默认为此信号,终止进程,End process|
 	 - e.g. `kill -9 2333`x掉2333，没得商量= =
 - 进程优先级
  - ... -> -60 -> +39 -> ...
