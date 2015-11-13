@@ -87,3 +87,12 @@
  x=$(($y+$z))
  ```
  - `expr`也可用于计算
+
+- 命令查找过程
+ - 是否为Qualified path name。如`/bin/ls -l`，指定了路径，此时**无任何歧义**, 执行的一定为`/bin/`下名为`ls`的程序
+ - Reserved word, 保留字。如`do`, `done`, `if`...
+ - Alias
+ - Built-in command, 内建命令。如`source`, `[`, `((`, `(`, ...
+ - Function.
+ - PATH环境变量。按照从前往后的顺序依次查找。
+
