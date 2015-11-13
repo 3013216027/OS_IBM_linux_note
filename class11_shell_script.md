@@ -43,3 +43,28 @@
  | -le | less than or equal |
  | -gt | greater than |
  | -ge | greater than or equal |
+
+- `&&`和`||`
+ - 可用来连接命令，注意`||`的**短路**效应，比如`[ -f dong.txt ] || echo 'dong.txt not exist' && echo 'dong.txt exist'`，如果`dong.txt`存在，则`echo 'dong.txt not exist'`不会执行(被短路), 于是`[ -f dong.txt ]`的返回值会继续向后传递，`&&`后命令当且仅当前面的返回值为`0`时才会执行，于是`echo 'dong.txt exist'`就会打印粗来惹。
+
+- `if-else`控制结构
+ ```bash
+ if condition
+ then do-something
+ fi
+ ```
+
+- `while`循环
+ ```bash
+ while condition
+ do something
+ done
+ ```
+
+- `for`循环
+ - e.g.
+ ```bash
+ for file in ~/*; do
+ 	echo $file
+ done
+ ```
