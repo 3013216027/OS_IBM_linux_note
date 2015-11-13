@@ -18,13 +18,13 @@
 
 - `test`命令
  - `[]`可以达到和`test`相同的功能，用得更多一些, e.g.
-	 ```bash
-	 if [ $cnt -le 15 ]; then
-		 echo $cnt
-		 cnt=$(($cnt+1))
-	 fi
-	 ```
- 
+ ```bash
+ if [ $cnt -le 15 ]; then
+	 echo $cnt
+	 cnt=$(($cnt+1))
+ fi
+ ```
+
  | 选项 | 功能 |
  |:----:|:--------------------:|
  | -f | 是否为文件 |
