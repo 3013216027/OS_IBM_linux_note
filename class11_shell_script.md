@@ -60,6 +60,15 @@
  fi
  ```
 
+- `case`控制结构
+ ```bash
+ case $1 in
+ 	'y'|'yes') exit 0;;
+	'n'|'no') exit 1;;
+	*) exit 2
+ esac
+ ```
+
 - `while`循环
  ```bash
  while condition
@@ -72,6 +81,17 @@
  ```bash
  for file in ~/*; do
  	echo $file
+ done
+ ```
+ 
+- `util`循环
+ - e.g.
+ ```bash
+ id=$#
+ until [ $id -eq 0 ]; do
+ 	eval echo -n \$$id
+	let id=$id-1
+	echo -n ' '
  done
  ```
 - 循环处理参数
