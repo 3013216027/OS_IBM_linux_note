@@ -10,6 +10,12 @@
 - shell命令行参数
  - $#代表参数个数，不包含脚本名本身
  - $1,$2,...$($#)表示各参数，从1开始计数，不包含脚本名本身。
+ - $0代表命令名，如`./test.sh`等
+ - $\*代表从$1开始的所有参数，空格分隔
+ - $@同$\*，但是:
+ 	- $\*被引号引用时，输出结果是"$1 $2 ..."
+	- $@被引号包括时，输出结果是"$1" "$2" ...
+ - $-代表当前设置的shell选项，默认是`himBH`,可参看(百度知道)[http://zhidao.baidu.com/link?url=Hp7lV7PukgEOjzRtBCV7wx3CBffNXvIbZFiQkH38gWy8UlNYWjcV-A_r47n3cbQ1Po-hwx_BKXO17yDESzP9tF3cPM5Qli5ds2rmZPQlrbm]
 
 - 输入输出重定向中，没有`<<`，此处说明其特殊用途。
  - `<< final`可指定结束标记，举例说明:
