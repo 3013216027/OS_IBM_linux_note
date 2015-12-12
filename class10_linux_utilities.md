@@ -1,6 +1,7 @@
 #Linux utilities
 
 - Include commands: find & locate, grep, cut, sort, head, tail, type, which, whereis, file, join, paste, etc. 最重要的是`find`和`grep`
+- `tail -f`可以查看文件末尾，并实时更新，非常好用:smile::see_no_evil:
 
 ### find
 - `find where what how`, e.g. `find . -name orange`
