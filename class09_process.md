@@ -46,11 +46,11 @@
 	 |02|Ctrl-C|中断,Interrupt|终止进程,End process|
 	 |03|Ctrl-\\|退出,Quit|终止进程并转储,End process and core dump|
 	 |09| |杀死,kill|终止进程(不可被重定义),End process(Cannot be redefined-handled by kernel)|
-	 |15| |终结,Terminate|终止进程,End process|
+	 |15| |终结,Terminate|默认为此信号,终止进程,End process|
 	 - e.g. `kill -9 2333`x掉2333，没得商量= =
 - 进程优先级
  - ... -> -60 -> +39 -> ...
- - 越小优先级越高, [-20, 19]是为用户预留的可定义优先级
+ - 越小优先级越高, 默认为0, [-60,-21]为内核等保留, [20,]用于动态调整, [-20, 19]是为用户预留的可定义优先级
  - 除`root`用户外，只能调大不能调小
 - daemons
  - 永不终止
@@ -64,4 +64,4 @@
  - `pstree`, 显示进程树
  - `kill`, `killall`
  - `nohup`, 常驻后台运行，"别挂起俺"
- - `nice`,自定义优先级, `renice`，重定义优先级
+ - `nice`,`nice -n priority`自定义优先级, 默认为10, `renice`，重定义优先级
