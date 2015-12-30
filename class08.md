@@ -5,9 +5,9 @@
 - `ls [1-100]*` :匹配首字符为1~1或者是0或者是0的文件
 - 0(stdin) 1(stdout) 2(stderr)
 - some interesting command
- - `grep`
- - `sed`
- - `awk`
+ - `grep`: 正则抓取行
+ - `sed`: 按行处理，如`sed 's/^/#/g' test.txt`, `sed 's/^/#/g; 3,$s/This/That/g' test.txt`
+ - `awk`: 按行规格处理，如`awk "{print $1, $3}" test.txt`, `awk '{printf "%f %3f\n", $1, $2}' test.txt`, `awk '$3 == 0 && $1 > 0' test.txt`...
  - `fmt`(insert line wraps)
  - `expand`/`unexpand`(tabs=>spaces, spaces=>tabs)
  - `tr`(translate, e.g. `ls | tr a-f 1-6`, use 1-6 to replace a-f)
